@@ -1,2 +1,14 @@
 .pages-home-page-wrapper {
+  h1 {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+
+    .add-color-form {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0%;
+    }
+  }
 }

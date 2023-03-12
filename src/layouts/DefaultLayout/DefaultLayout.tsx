@@ -6,7 +6,10 @@ import DefaultLayoutSidebar from './DefaultLayoutSidebar';
 
 const DefaultLayout = () => {
   return (
-    <div className="layouts-default-layout-wrapper">
+    <div
+      className="layouts-default-layout-wrapper"
+      data-testid="layout-wrapper"
+    >
       <DefaultLayoutHeader />
       <div className="main-content">
         <HomePage />
