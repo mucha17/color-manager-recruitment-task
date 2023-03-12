@@ -2,7 +2,9 @@ import './DefaultLayoutFooter.scss';
 
 const DefaultLayoutFooter = () => {
   return (
-    <footer className="layouts-default-layout-footer-wrapper">Footer</footer>
+    <footer className="layouts-default-layout-footer-wrapper">
+      <span>Copyright Tomasz Muchowski</span>
+    </footer>
   );
 };
 
