@@ -1,0 +1,48 @@
+@import '/src/styles/colors';
+
+.components-popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .content {
+    background-color: $color-light-grayish-blue;
+    padding: 1.25rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 25rem;
+
+    .message {
+      margin: 0 0 0.625rem 0;
+      font-size: 1;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.25rem;
+
+      .button {
+        padding: 0.625rem 1.25rem;
+        border: none;
+        background-color: $color-dark-gunmetal;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-midnight-blue;
+        }
+      }
+    }
+  }
+}
