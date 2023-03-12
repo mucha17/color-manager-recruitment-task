@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "npm.packageManager": "npm",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "eslint.packageManager": "npm",
+  "eslint.nodePath": "/node_modules/eslint/bin/eslint.js",
+  "prettier.prettierPath": "/node_modules/.bin/prettier",
+  "scssFormatter.singleQuote": true,
+  "scssFormatter.trailingComma": "all",
+  "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+}
