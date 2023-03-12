@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; // Prevent padding and border from affecting element width.
+}
+
+html {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: normal;
+}
+
+body {
+  margin: 0; // remove default margin
+  line-height: inherit; // inherit line-height from html to remove inconsistencies
+}

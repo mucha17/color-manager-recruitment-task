@@ -1,0 +1,13 @@
+@import '/src/styles/colors';
+
+.layouts-default-layout-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .main-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+}
