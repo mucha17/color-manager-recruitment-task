@@ -1,0 +1,27 @@
+.components-accordion-wrapper {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    .title {
+      margin: 0;
+    }
+
+    .icon {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+  }
+}
