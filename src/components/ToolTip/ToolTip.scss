@@ -13,6 +13,7 @@
   transform-origin: top center;
   transform: scale(0);
   z-index: 20;
+  max-width: 12rem;
 
   &.show {
     transform: scale(1);
@@ -30,17 +31,27 @@
 
   .content {
     display: flex;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     color: $color-white;
+    justify-content: space-around;
+    align-items: center;
+
+    .text {
+      p {
+        font-variant: small-caps;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
 
     .icon {
       display: inline-block;
       padding-right: 0.25rem;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 3rem;
+      height: 3rem;
       color: inherit;
       background-color: inherit;
     }

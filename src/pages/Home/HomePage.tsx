@@ -1,12 +1,23 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Accordion from '../../components/Accordion';
 import ColorInputForm from '../../components/ColorInputForm';
+import ColorsList from '../../components/ColorsList';
+import FiltersSelector, {
+  SelectedConditionsType,
+} from '../../components/FiltersSelector';
 import useLocalStorage from '../../contexts/LocalStorageContext/useLocalStorage';
 import Color from '../../utils/Color';
 import './HomePage.scss';
 
 const HomePage = () => {
   const { addColors } = useLocalStorage();
+  const [selectedConditions, setSelectedConditions] =
+    useState<SelectedConditionsType>({
+      red: false,
+      green: false,
+      blue: false,
+      saturation: false,
+    });
 
   // seed the local storage with predefined colors
   useEffect(() => {
@@ -28,6 +39,14 @@ const HomePage = () => {
         <div className="add-color-form">
           <Accordion title="Add color">
             <ColorInputForm />
+          </Accordion>
+        </div>
+        <div className="view-colors-container">
+          <Accordion title="View colors">
+            <div>
+              <FiltersSelector setSelectedConditions={setSelectedConditions} />
+              <ColorsList selectedConditions={selectedConditions} />
+            </div>
           </Accordion>
         </div>
       </div>

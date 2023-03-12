@@ -1,0 +1,46 @@
+.components-color-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  max-width: 12rem;
+  width: 100%;
+
+  .rectangle {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .removeButton {
+      button {
+        margin: 0;
+        padding: 0.5rem;
+        background-color: transparent;
+        border-style: solid;
+        border-radius: 20%;
+        border-color: red;
+        border-width: 2px;
+        color: red;
+        cursor: pointer;
+        font-weight: 900;
+      }
+      button:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}

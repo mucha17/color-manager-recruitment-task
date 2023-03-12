@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
 import infoSVG from '../../assets/icons/info.svg';
-import InlineSVG from '../InlineSVG';
 import './ToolTip.scss';
 
 interface ToolTipProps {
@@ -97,8 +96,10 @@ const ToolTip = ({ hookedElementId, children }: ToolTipProps) => {
       }}
     >
       <div className="content">
-        <InlineSVG src={infoSVG} className="icon" />
-        <div>{children}</div>
+        <div>
+          <img src={infoSVG} alt="" className="icon" />
+        </div>
+        <div className="text">{children}</div>
       </div>
     </div>
   );
